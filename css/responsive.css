@@ -1,0 +1,254 @@
+@media (max-width: 1187px) {
+  body,
+  main {
+    min-width: 100%;
+  }
+  .header-content,
+  .footer-content,
+  .img-logo,
+  .main-content ul {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .gallery-img {
+    width: 600px;
+    height: 912px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 119px;
+  }
+}
+@media (max-width: 991px) {
+  body,
+  main {
+    min-width: 100%;
+  }
+  .main-content ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .main-content ul li {
+    width: 100%;
+  }
+  .main-content ul p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .form strong {
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .form {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  fieldset {
+    width: 100%;
+  }
+  .row-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .checkbox-holder,
+  .radiobutton-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-item-check,
+  .form-item-holder {
+    padding-bottom: 19px;
+  }
+  .row-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 119px;
+  }
+  .left-form,
+  .right-form {
+    width: 100%;
+  }
+  .form-input {
+    height: 450px;
+  }
+}
+@media (max-width: 870px) {
+  .intro h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .img-logo {
+    width: 400px;
+    height: 200px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .img-logo img {
+    padding-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .intro {
+    position: relative;
+  }
+  .main-nav input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
+  .main-nav input[type="checkbox"]:checked ~ ul {
+    transform: none;
+  }
+  .main-nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100vh;
+    background: #ffe600;
+    z-index: 10;
+    width: 100%;
+    align-items: center;
+    padding-top: 50px;
+    transform: translate(0, -100vh);
+    transition: transform 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  .main-nav input[type="checkbox"]:checked ~ ul {
+    transform: none;
+  }
+  .main-nav ul li {
+    margin-bottom: 70px;
+  }
+  .main-nav ul a {
+    font-size: 25px;
+  }
+  .main-nav li.active a,
+  .main-nav a:hover {
+    color: #131316;
+    border: 1px solid #131316;
+  }
+  .burger {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: #ffe600;
+    z-index: 11;
+  }
+  .burger span {
+    width: 36px;
+    height: 4px;
+    border-radius: 5px;
+    background: #131316;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+  }
+  .burger span:hover {
+    cursor: pointer;
+  }
+  .burger span:nth-child(2) {
+    top: 12px;
+  }
+  .burger span:nth-child(3) {
+    top: 22px;
+  }
+  .burger span:last-child {
+    top: 32px;
+  }
+  .main-nav input[type="checkbox"]:checked ~ label.burger {
+    background: #89898b;
+    border-radius: 50%;
+  }
+  .main-nav input[type="checkbox"]:checked ~ label span:nth-child(2) {
+    transform: rotate(-135deg);
+    top: 18px;
+    left: 3px;
+    width: 33px;
+    background: #ffe600;
+  }
+  .main-nav input[type="checkbox"]:checked ~ label span:nth-child(3) {
+    transform: rotate(135deg);
+    top: 18px;
+    left: 3px;
+    width: 33px;
+    background: #ffe600;
+  }
+  .main-nav input[type="checkbox"]:checked ~ label span:first-child,
+  .main-nav input[type="checkbox"]:checked ~ label span:last-child {
+    opacity: 0;
+  }
+}
+@media (max-width: 610px) {
+  .intro strong {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .main-content h2,
+  .main-gallery h2 {
+    padding-top: 50px;
+  }
+  .main-content strong,
+  .main-gallery strong,
+  .clients strong {
+    text-align: center;
+  }
+  .section {
+    height: 400px;
+  }
+  .section-content {
+    height: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-content h2 {
+    padding-bottom: 20px;
+  }
+  .gallery-img {
+    width: 300px;
+    height: 1700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 50px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .img-logo {
+    width: 300px;
+    height: 280px;
+  }
+}
